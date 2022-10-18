@@ -8,15 +8,9 @@ public class MyComponent {
 
     String mycomponentname;
 
-    public String myComponent(){
+    public MyComponent(){
 
-        System.out.println("MyComponent constructor has been called ");
-
-        String mycomponentImmutableName = "giuseppe";
-
-        mycomponentname = mycomponentImmutableName;
-
-        return mycomponentImmutableName;
+        this.mycomponentname = mycomponentname;
 
 
 
@@ -25,8 +19,8 @@ public class MyComponent {
 
     public String getMyComponentName() {
 
-       String mycomponentnameImmutableName = myComponent();
-        System.out.println("getMyComponentNam method has been called");
+       String mycomponentnameImmutableName = mycomponentname;
+        System.out.println("getMyComponentName method has been called");
 
         return mycomponentnameImmutableName;
     }
